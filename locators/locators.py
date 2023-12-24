@@ -1,36 +1,29 @@
 # Sprint_5
 # Список локаторов для страницы https://stellarburgers.nomoreparties.site/
 
-url = "https://stellarburgers.nomoreparties.site/"  # Адрес страницы
-registration_url = "https://stellarburgers.nomoreparties.site/register"  # Адрес формы регистрации
-login_in = "https://stellarburgers.nomoreparties.site/login"  # Адрес формы входа в аккаунт
-
-# Тестовый аккаунт
-Test_email = 'seleznev_4@gmail.ru'
-Password = '123456'
 # Кнопки
-
-Personal_Area_button = ".//nav/a/p"  # Кнопка личного кабинета
-Go_to_registration_page_button = ".//p[1]/a"  # Кнопка перехода к регистрации нового пользователя
-Register_button = ".//form/button"  # Кнопка зарегистрироваться
-Login_to_account = ".//section[2]/div/button"  # Кнопка перехода к странице входа в аккаунт
-Enter_to_account = ".//form/button"  # Кнопка войти в аккаунт
-Place_an_order = ".//section[2]/div/button"  # Кнопка оформить заказ
-Recover_password = ".//p[2]/a"  # Кнопка восстановить пароль
-Button_remembered_the_password = ".//p/a"  # Кнопка входа вспомнил пароль
-Exit_button = ".//li[3]/button"  # Кнопка выхода из личного кабинета
-Button_constructor = ".//li[1]/a/p"  # Кнопка входа в конструктор
-Logo = ".//nav/div"  # Кнопка логотипа
-Button_switching_to_sauce = ".//section[1]/div[1]/div[2]"  # Кнопка перехода в раздел соусов
-Button_switching_to_filling = ".//section[1]/div[1]/div[3]"  # Кнопка перехода в раздел начинок
-Button_switching_to_buns = ".//section[1]/div[1]/div[1]"  # Кнопка перехода в раздел булок
+PERSONAL_AREA_BUTTON = ".//*[@href='/account']"  # Кнопка личного кабинета
+REGISTRATION_PAGE_BUTTON = ".//*[@href='/register']"  # Кнопка перехода к регистрации нового пользователя
+REGISTER_BUTTON = ".//*[text()='Зарегистрироваться']"  # Кнопка зарегистрироваться
+LOGIN_TO_ACCOUNT = ".//*[text()='Войти в аккаунт']"  # Кнопка перехода к странице входа в аккаунт
+ENTER_TO_ACCOUNT = ".//button[text()='Войти']"  # Кнопка войти в аккаунт
+ENTER_TO_ACCOUNT_LINK = ".//*[@href='/login']" # Кнопка войти в форме для регистрации
+PLACE_AN_ORDER = ".//*[text()='Оформить заказ']"  # Кнопка оформить заказ
+RECOVER_PASSWORD = ".//*[text()='Восстановить пароль']"  # Кнопка восстановить пароль
+BUTTON_REMEMBERED_THE_PASSWORD = ".//a[text()='Войти']"  # Кнопка входа вспомнил пароль
+EXIT_BUTTON = ".//*[text()='Выход']"  # Кнопка выхода из личного кабинета
+BUTTON_CONSTRUCTOR = ".//*[text()='Конструктор']"  # Кнопка входа в конструктор
+LOGO = ".//*[@class='AppHeader_header__logo__2D0X2']"
+BUTTON_SWITCHING_TO_SAUCE = ".//section[1]/div[1]/div[2]"  # Кнопка перехода в раздел соусов
+BUTTON_SWITCHING_TO_FILLING = ".//section[1]/div[1]/div[3]"  # Кнопка перехода в раздел начинок
+BUTTON_SWITCHING_TO_BUNS = ".//section[1]/div[1]/div[1]"  # Кнопка перехода в раздел булок
 
 # Поля для ввода
-Name_input_field = ".//fieldset[1]/div/div/input"  # Поле ввода Имени при регистрации
-Email_input_field = ".//fieldset[2]/div/div/input"  # Поле ввода Email при регистрации
-Password_input_field = ".//fieldset[3]/div/div/input"  # Поле ввода пароля при регистрации
-Login_Email_input_field = ".//fieldset[1]/div/div/input"  # Поле ввода Email для входа в аккаунт
-Login_Password_input_field = ".//fieldset[2]/div/div/input"  # Поле ввода пароля для входа в аккаунт
+NAME_INPUT_FIELD = ".//fieldset[1]/*/*/*[@name='name']"  # Поле ввода Имени при регистрации
+EMAIL_INPUT_FIELD = ".//fieldset[2]/*/*/*[@name='name']"  # Поле ввода Email при регистрации
+PASSWORD_INPUT_FIELD = ".//*[@type='password']"  # Поле ввода пароля при регистрации
+LOGIN_EMAIL_INPUT_FIELD = ".//*[@name='name']"  # Поле ввода Email для входа в аккаунт
+LOGIN_PASSWORD_INPUT_FIELD = ".//*[@name='Пароль']"  # Поле ввода пароля для входа в аккаунт
 
 # Поля для вывода
-Error_invalid_password_field = ".//fieldset[3]/div/p"  # Поле с сообщением об ошибке при неверном формате пароля
+ERROR_INVALID_PASSWORD_FIELD = ".//*[text()='Некорректный пароль']"  # Поле ошибки при неверном формате пароля

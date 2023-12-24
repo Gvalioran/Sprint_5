@@ -1,20 +1,21 @@
 import pytest
 import random
 from selenium import webdriver
-from locators import locators as loc
+
+from constants import constants as const
 
 
 @pytest.fixture  # Фикстура для создания драйвера
 def driver():
     driver = webdriver.Chrome()
     driver.maximize_window()
-    driver.get(loc.url)
+    driver.get(const.BASE_URL)
     yield driver
     driver.quit()
 
 
 @pytest.fixture()  # Фикстура, которая создает данные для регистрации пользователя
-def generate_an_account():
+def generating_test_data():
     array = [chr(i) for i in range(65, 91)]
     random.shuffle(array)
     name = ""
